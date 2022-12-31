@@ -14,3 +14,30 @@ Location of DB Engine Install (Where MySQL currently resides on file system):
 /Users/Shared/DBngin/mysql
 
 ```
+<hr>
+
+# MySQL Password and Username Reset for the following errors:
+
+```
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/your-path-here' 
+
+```
+
+```
+Access Denied for User 'root'@'localhost' (using password: YES/NO)
+
+```
+
+Step 1. Navigate to "support-files" in:
+
+```
+/Users/Shared/DBngin/mysql
+
+```
+
+Step 2. Once there, use the following command to start mysql server:
+
+```
+mysql.server start --skip-grant-tables
+
+```
