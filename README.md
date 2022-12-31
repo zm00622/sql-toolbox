@@ -91,3 +91,39 @@ Then run:
 mysql -u root -p
 
 ```
+
+<hr>
+
+If the above steps don't work, then try:
+
+
+Create new user from the bin folder (instead of using root) fixed my problem.
+
+```
+
+mysql> CREATE USER 'new_user'@'%' IDENTIFIED BY 'password';
+Query OK, 0 rows affected (0.00 sec)
+
+```
+
+Then grant:
+
+```
+
+mysql> GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, RELOAD, PROCESS, REFERENCES, INDEX, ALTER, SHOW DATABASES, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE, REPLICATION SLAVE, REPLICATION CLIENT, CREATE VIEW, SHOW VIEW, CREATE ROUTINE, ALTER ROUTINE, CREATE USER, EVENT, TRIGGER ON *.* TO 'new_user'@'%' WITH GRANT OPTION;
+
+```
+
+Then change the credentials in your env or javascript file:
+
+```
+
+  var connection = mysql.createConnection({
+    host     : 'The mysql IP',
+    port     : 'The mysql Port',
+    user     : 'new_iser',
+    password : 'new_user_pass',
+    database : 'database-name'
+  }); 
+
+```
