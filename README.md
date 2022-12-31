@@ -101,7 +101,7 @@ Create new user from the bin folder (instead of using root) fixed my problem.
 
 ```
 
-mysql> CREATE USER 'new_user'@'%' IDENTIFIED BY 'password';
+mysql> CREATE USER 'test_user'@'%' IDENTIFIED BY 'password';
 Query OK, 0 rows affected (0.00 sec)
 
 ```
