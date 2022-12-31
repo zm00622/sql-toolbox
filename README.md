@@ -41,3 +41,10 @@ Step 2. Once there, use the following command to start mysql server:
 mysql.server start --skip-grant-tables
 
 ```
+
+Step 3. Once the server successfully starts, then navigate back to the bin folder. Type "mysql" into the command line and press enter to launch the mysql command prompt:
+
+```
+mysql
+
+```
