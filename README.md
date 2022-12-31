@@ -62,3 +62,10 @@ Step 5. Insert new password:
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'password';
 
 ```
+
+Step 6. To shut down the mysql server that was started from your terminal, run the following command from the bin directory:
+
+```
+mysql.server stop
+
+```
