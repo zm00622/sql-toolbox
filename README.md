@@ -28,6 +28,14 @@ Access Denied for User 'root'@'localhost' (using password: YES/NO)
 
 ```
 
+```
+  code: 'ER_ACCESS_DENIED_ERROR',
+  errno: 1045,
+  sqlMessage: "Access denied for user 'root'@'localhost' (using password: YES)",
+  sqlState: '28000',
+  
+```
+
 Step 1. Navigate to "support-files" in:
 
 ```
