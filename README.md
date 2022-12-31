@@ -48,3 +48,10 @@ Step 3. Once the server successfully starts, then navigate back to the bin folde
 mysql
 
 ```
+
+Step 4. Enter the following command to flush the privileges:
+
+```
+FLUSH PRIVILEGES;
+
+```
