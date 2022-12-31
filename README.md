@@ -55,3 +55,10 @@ Step 4. Enter the following command to flush the privileges:
 FLUSH PRIVILEGES;
 
 ```
+
+Step 5. Insert new password:
+
+```
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'password';
+
+```
