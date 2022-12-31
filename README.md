@@ -19,7 +19,7 @@ Location of DB Engine Install (Where MySQL currently resides on file system):
 # MySQL Password and Username Reset for the following errors:
 
 ```
-ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/your-path-here' 
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/tmp/mysql.sock' 
 
 ```
 
