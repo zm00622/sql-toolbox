@@ -69,3 +69,17 @@ Step 6. To shut down the mysql server that was started from your terminal, run t
 mysql.server stop
 
 ```
+
+Step 7. To start again, run:
+
+```
+mysql.server start
+
+```
+
+Then run:
+
+```
+mysql -u root -p
+
+```
